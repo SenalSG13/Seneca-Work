@@ -1,0 +1,151 @@
+
+#main-container{
+	width:1100px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+h1, h2 {
+	padding: 5px;
+}
+
+p, #form, #footer{
+	
+	font-weight: 300;
+	font-size: 14px;
+}
+
+#header{
+	background-color: black;
+	width:100%;
+	height:100px;
+	text-align: center;
+	}
+
+#navigation{
+	float:left;
+	width:15%;
+	background-color: lightseagreen;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	}
+
+
+#body{
+float:left;
+	width:70%;
+	background-color: lightgray;
+	}
+#siteHead{
+	background-color: white;
+}
+#sidePanel{
+	float:right;
+	width:15%;
+	background-color: darkseagreen;
+	}
+
+#footer{
+	clear:both;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	display: inline-block;
+	}
+
+
+.header-content{
+	margin: 0;
+   	position: relative;
+   	top: 50%;                         
+   	transform: translate(0, -50%)
+}
+
+#logo-image{
+	max-width:200px;
+	margin-right: -50px;
+	margin-left: -50px;
+}
+
+.footer-content{
+	margin: 0;
+	font-weight: 500;
+   	position: relative;
+   	top: 50%;                         
+   	transform: translate(0, -50%)
+}
+
+.navigation-content.h2{
+	text-align: center;
+}
+
+#navigation, #body, #sidePanel{
+	min-height: 800px;		
+}
+
+#header, #footer{
+	color:white;
+}
+
+.container{
+	width:90%;
+	margin-left:5%;
+}
+.sitemap{
+	height:20px;
+	margin-top:5px;
+	background-color: orange;
+	padding:5px;
+	color:white;
+	
+}
+
+a:link{
+	text-decoration: none;
+	color: white;
+}
+
+a:active .sitemap{
+	background-color: saddlebrown !important;
+}
+
+a:hover .sitemap{
+	background-color: purple;
+}
+
+.currentLink{
+	background-color: purple;
+}
+
+td{
+	padding:5px;
+}
+
+fieldset{
+	border:0;
+}
+button{
+	background-color: white;
+	margin-top: 1em;
+	margin-left: 4em;
+	padding: 0.5em 0.7em;
+	display:inline-block;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	  
+}
+#reset:hover{
+
+	background-color: rgb(218, 47, 47); 
+	border-color: rgb(255, 255, 255);
+	color: white;
+	font-weight: bold;
+}
+
+#formSubmit:hover{
+	background-color: #4CAF50; 
+	color: white;
+	border-color: white;
+	font-weight: bold;
+}

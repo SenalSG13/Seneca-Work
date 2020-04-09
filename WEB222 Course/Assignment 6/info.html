@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Goonetilaka</title>
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="info.js"></script>
+
+</head>
+
+<body id="main-container">
+
+	<div id="header">
+		<div class="header-content">
+			<table id="logo">
+				<tr>
+					<td><img id="logo-image" src="logo.png" alt="logo"></td>
+					<td id="logo-text">
+						<h1>MyStore</h1>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="navigation">
+		<div class="navigation-content">
+			<h2 id="siteHead">Site Map</h2>
+			<a href="honesty.html">
+				<div class="sitemap">Home</div>
+			</a>
+			<a href="info.html">
+				<div class="sitemap currentLink">Sign Up</div>
+			</a>
+		</div>
+	</div>
+
+	<div id="body">
+		<div class="container">
+			<h2>Sign Up</h2>
+
+			<form name="signup" id="form" action="https://httpbin.org/post" onkeyup="updateC()" onchange="updateC()" method="post">
+				<table>
+					<tr>
+						<td>First Name</td>
+						<td><input type="text" name="fname" required onkeyup="validateFname()" onchange="validateFname()"></td>
+					</tr>
+
+					<tr>
+						<td>Last Name</td>
+						<td><input type="text" name="lname" required onkeyup="validateLname()" onchange="validateLname()"></td>
+					</tr>
+
+					<tr>
+						<td>Password</td>
+						<td><input type="password" name="password_1" required onkeyup="validatePassword()" onchange="validatePassword()"></td>
+					</tr>
+
+					<tr>
+						<td>Confirm Password</td>
+						<td><input type="password" name="password_2" required onkeyup="validateConfirmPassword()" onchange="validateConfirmPassword()"></td>
+					</tr>
+
+					<tr>
+						<td>Username</td>
+						<td><input type="text" name="uname" required onkeyup="validateUsername()" onchange="validateUsername()"></td>
+					</tr>
+
+					<tr>
+						<td>Education Level</td>
+						<td>
+							<select>
+								<option value="0">-select-</option>
+								<option value="technical_diploma">Technical Diploma</option>
+								<option value="collage_diploma">College Diploma</option>
+								<option value="bachelor's_degree">Bachelor's Degree</option>
+								<option value="master's_degree">Master's Degree</option>
+								<option value="others">Others</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Education Status</td>
+						<td>
+							<fieldset>
+								<input type="radio" name="edu_stat" value="graduated" required>Graduated<br>
+								<input type="radio" name="edu_stat" value="current_enrolled">Current enrolled<br>
+								<input type="radio" name="edu_stat" value="DNG">Did not graduate
+							</fieldset>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Email</td>
+						<td><input type="email" name="email" required></td>
+					</tr>
+
+					<tr>
+						<td>Age</td>
+						<td><input type="number" name="age" required onchange="validateAge()"></td>
+					</tr>
+
+					<tr>
+						<td><button id="reset" type="reset" value="Reset">Reset</button></td>
+						<td><button id="formSubmit" type="Submit" value="Submit">Submit</button></td>
+					</tr>
+				</table>
+
+				<input type="hidden" name="lastName" id="lastName" value="Goonetilaka" />
+				<input type="hidden" name="studentId" id="studentId" value="136471174" />
+
+			</form>
+
+		</div>
+
+	</div>
+
+
+	<div id="sidePanel">
+		<div class="container">
+			<div id="msg" class="alert">
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="footer-content">&copy; 2018 MyStore. All rights reserved.</div>
+	</div>
+</body>
+
+</html>
